@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangladesh History Archive - Highlights</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body class="bg-light text-dark">
+    <!-- nav menu  -->
+     <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Liberation War</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="document.html">Document</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="interview.html">Interviews</a>
+        </li>
+           <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Photo Gallery</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Photo Gallery Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Photo Gallery</h2>
+            <p class="text-muted col-lg-8 mx-auto">
+                A curated collection of photographs capturing significant moments,
+                historic locations, and remarkable individuals from the Bangladesh
+                Liberation War of 1971.
+            </p>
+        </div>
+
+        <!-- Category Navigation -->
+        <ul class="nav nav-pills justify-content-center mb-5">
+
+            <li class="nav-item">
+                <a class="nav-link active filter-btn" href="#" data-filter="all">All</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link filter-btn" href="#" data-filter="events" >Events</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link filter-btn" href="#" data-filter="locations">Locations</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link filter-btn" href="#" data-filter="people">People</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link filter-btn" href="#" data-filter="themes">Themes</a>
+            </li>
+
+        </ul>
+        
+
+        <!-- Gallery -->
+        <div class="row g-4">
+
+            <!-- Image 1 -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="events">
+                <div class="card shadow-sm border-0 h-100">
+                    <img
+                            src="images/gallery1.png"
+                            class="card-img-top"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery1.png')"
+                            style="cursor:pointer;">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-danger mb-2">
+                            Event
+                        </span>
+
+                        <h5 class="card-title">
+                            Proclamation of Independence
+                        </h5>
+
+                        <p class="card-text text-muted">
+                            Historic moments surrounding the declaration of Bangladesh's independence in 1971.
+                        </p>
+
+                          <button
+                            class="btn btn-outline-primary btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery1.png')">
+                            View Photo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="locations">
+                <div class="card shadow-sm border-0 h-100">                   
+                          <img
+                            src="images/gallery2.jpg"
+                            class="card-img-top"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery2.jpg')"
+                            style="cursor:pointer;">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success mb-2">
+                            Location
+                        </span>
+
+                        <h5 class="card-title">
+                            Mujibnagar
+                        </h5>
+
+                        <p class="card-text text-muted">
+                            Photographs of places that played a vital role during the Liberation War.
+                        </p>                      
+                        
+                        <button
+                            class="btn btn-outline-primary btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery2.jpg')">
+                            View Photo
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="people">
+                <div class="card shadow-sm border-0 h-100">                 
+                     <img
+                            src="images/gallery3.jpg"
+                            class="card-img-top"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery3.jpg')"
+                            style="cursor:pointer;">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-primary mb-2">
+                            People
+                        </span>
+
+                        <h5 class="card-title">
+                            Freedom Fighters
+                        </h5>
+
+                        <p class="card-text text-muted">
+                            Portraits and documentary photographs of the brave individuals who fought for independence.
+                        </p>
+                           <button
+                            class="btn btn-outline-primary btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery3.jpg')">
+                            View Photo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="themes">
+                <div class="card shadow-sm border-0 h-100">
+                      <img
+                            src="images/gallery4.jpg"
+                            class="card-img-top"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery4.jpg')"
+                            style="cursor:pointer;">
+                           
+                    <div class="card-body">
+                        <span class="badge bg-warning text-dark mb-2">
+                            Theme
+                        </span>
+
+                        <h5 class="card-title">
+                            Refugee Crisis
+                        </h5>
+
+                        <p class="card-text text-muted">
+                            Images documenting the humanitarian challenges faced by civilians during the war.
+                        </p>
+                          <button
+                            class="btn btn-outline-primary btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery4.jpg')">
+                            View Photo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="events">
+                <div class="card shadow-sm border-0 h-100">
+
+                        <img
+                            src="images/gallery5.jpg"
+                            class="card-img-top"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery5.jpg')"
+                            style="cursor:pointer;">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-danger mb-2">
+                            Event
+                        </span>
+
+                        <h5 class="card-title">
+                            Victory Day
+                        </h5>
+
+                        <p class="card-text text-muted">
+                            Historic photographs celebrating the victory and liberation of Bangladesh.
+                        </p>
+
+                         <button
+                            class="btn btn-outline-primary btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery5.jpg')">
+                            View Photo
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="col-md-6 col-lg-4 gallery-item" data-category="locations">
+                <div class="card shadow-sm border-0 h-100">
+
+                   <img
+                            src="images/gallery6.jpg"
+                            class="card-img-top"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery6.jpg')"
+                            style="cursor:pointer;">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success mb-2">
+                            Location
+                        </span>
+
+                        <h5 class="card-title">
+                            Sector Headquarters
+                        </h5>
+
+                        <p class="card-text text-muted">
+                            Important military and administrative locations associated with the Liberation War.
+                        </p>
+
+                        <button
+                            class="btn btn-outline-primary btn-sm"
+                            data-bs-toggle="modal"
+                            data-bs-target="#imageModal"
+                            onclick="showImage('images/gallery6.jpg')">
+                            View Photo
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- image download modal -->
+<div class="modal fade" id="imageModal">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Historical Photograph
+                </h5>
+                <button
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img
+                    id="modalImage"
+                    src=""
+                    class="img-fluid">
+            </div>
+
+            <div class="modal-footer">
+                <button
+                    class="btn btn-secondary"
+                    onclick="zoomOut()">
+                    − Zoom Out
+                </button>
+                <button
+                    class="btn btn-success"
+                    onclick="zoomIn()">
+                    + Zoom In
+                </button>
+                <a
+                    id="downloadBtn"
+                    class="btn btn-primary"
+                    download>
+                    Download
+                </a>
+            </div>
+        </div>
+   </div>
+</div>
+    <!-- Bootstrap 5 JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
